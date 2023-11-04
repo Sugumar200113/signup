@@ -1,0 +1,117 @@
+/* Default styles for larger screens */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0077FF, #00AAFF);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/1.jpg'); /* Update the path accordingly */
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-align: center;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #00AAFF;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.options {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  /* Adjust background image for smaller screens */
+  
+
+  /* Additional styles for smaller screens (mobile devices) */
+  .login-box {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  .login-button {
+    padding: 8px;
+  }
+
+  .options {
+    font-size: 12px;
+  }
+}
+
+/* Media queries for very small screens (e.g., smaller than 480px) */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    padding: 6px;
+  }
+
+  .login-button {
+    padding: 6px;
+  }
+
+  .options {
+    font-size: 10px;
+  }
+}

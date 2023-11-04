@@ -1,0 +1,72 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0077FF, #00AAFF);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/1.jpg');
+    
+  }
+  @media (max-width: 768px) {
+    /* Adjust background image for smaller screens */
+   
+  }
+  .signup-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .signup-box:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .register-button, .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px; /* Add margin to center between the gaps */
+  }
+  
+  .register-button:hover, .button-link:hover {
+    background: #0072dd;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input::placeholder {
+    font-weight: bold; /* Make the placeholder text thicker */
+    color: #fff; /* Set the placeholder text color to white */
+  }
